@@ -1,0 +1,170 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "decode 2020",
+    "description": "",
+    "version": "1.0"
+  },
+  "host": "typublic.blob.core.windows.net",
+  "basePath": "/decode",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/sessions.json": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "id"
+                  },
+                  "code": {
+                    "type": "string",
+                    "description": "code"
+                  },
+                  "publishtime": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "publishtime"
+                  },
+                  "title": {
+                    "type": "string",
+                    "description": "title"
+                  },
+                  "thumbnail": {
+                    "type": "string",
+                    "description": "thumbnail"
+                  },
+                  "status": {
+                    "type": "string",
+                    "description": "status"
+                  },
+                  "track": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": "id"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      }
+                    },
+                    "description": "track"
+                  },
+                  "topics": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "id"
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": "name"
+                        }
+                      }
+                    },
+                    "description": "topics"
+                  },
+                  "level": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": "id"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      }
+                    },
+                    "description": "level"
+                  },
+                  "targets": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "id"
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": "name"
+                        }
+                      }
+                    },
+                    "description": "targets"
+                  },
+                  "language": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": "id"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      }
+                    },
+                    "description": "language"
+                  },
+                  "visitors": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "visitors"
+                  },
+                  "views": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "views"
+                  },
+                  "day": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": "id",
+                        "title": "sessiontitle"
+                      },
+                      "name": {
+                        "type": "string",
+                        "description": "name"
+                      }
+                    },
+                    "description": "day"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "セッションを取得",
+        "description": "セッションを取得する",
+        "operationId": "GetSessions",
+        "parameters": []
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
